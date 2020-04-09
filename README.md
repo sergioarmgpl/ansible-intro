@@ -25,3 +25,7 @@ ansible-playbook -i inv web.yml --check #dry-run
 ansible-playbook -i inv web.yml -e "var1=value var2=value"
 
 locate in file {{ var1 }}
+
+ansible-playbook -i inv web.yml -e "mensaje=\"use variables\""
+{{mensaje}} Este lo use en el servidor
+
