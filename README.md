@@ -19,3 +19,4 @@ ssh-keygen
 ssh-copy-id server.dominio.tld
 
 ansible-playbook -i inv web.yml
+ansible-playbook -i inv web.yml --check #dry-run
