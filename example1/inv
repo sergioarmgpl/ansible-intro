@@ -1,0 +1,3 @@
+[webservers]
+server2 ansible_host=server2.curzona.net
+server3 ansible_host=server3.curzona.net
