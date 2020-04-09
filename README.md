@@ -29,3 +29,14 @@ locate in file {{ var1 }}
 ansible-playbook -i inv web.yml -e "mensaje=\"use variables\""
 {{mensaje}} Este lo use en el servidor
 
+ansible server1 -m setup -a filter=\*palabra\*
+
+tasks:
+  - debug:
+     var: variable
+     
+register al final de un task se puede imprimir
+-debug:
+  msg: "xyz {{ variable }}"
+  
+handlers
